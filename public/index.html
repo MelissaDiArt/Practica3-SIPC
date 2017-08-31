@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Bootstrap and AngularJS page </title>
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+    <link href="css/creative.css" rel="stylesheet">
+    <link href="SingUp/registro.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.6.0/firebase.js"></script>
+    <script src="https://cdn.firebase.com/libs/angularfire/2.1.0/angularfire.min.js"></script>
+    <script type="text/javascript" src="js/fire.js"></script>
+    <script type="text/javascript" src="js/Mycontroler.js"></script>
+
+</head>
+
+<body id="page-top" ng-app="myApp">
+
+<!-- Front page -->
+
+    <nav id="mainNav" class="nav navbar navbar-default navbar-fixed-top ">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Lollipop</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#about">Home</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Login</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact1">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1 id="homeHeading"> Lollipop</h1>
+                <hr>
+                <p>More than a cooking page</p>
+                <a href="#contact" class="btn btn-primary btn-xl page-scroll">Sing Up</a>
+            </div>
+        </div>
+    </header>
+
+<!-- Go login -->
+
+    <section class="bg-primary" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">UPLOAD OR DOWNLOAD</h2>
+                    <hr class="light">
+                    <p class="text-faded">Make your own recipe and upload or view gallery retas other users.</br> Million delicious recipes are waiting for you!</p>
+                    <a href="#contact" class="page-scroll btn btn-default btn-xl sr-button">Login</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Portafolio -->
+
+    <section class="no-padding" id="portfolio">
+        <div class="container-fluid">
+            <div class="row no-gutter popup-gallery">
+                <div class="col-lg-4 col-sm-6">
+                    <a href="img/portfolio/fullsize/1.jpg" class="portfolio-box">
+                        <img src="img/portfolio/thumbnails/1.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Sweet
+                                </div>
+                                <div class="project-name">
+                                    Cakepops
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="img/portfolio/fullsize/2.jpg" class="portfolio-box">
+                        <img src="img/portfolio/thumbnails/2.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Sweet
+                                </div>
+                                <div class="project-name">
+                                    Pachanga
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="img/portfolio/fullsize/3.jpg" class="portfolio-box">
+                        <img src="img/portfolio/thumbnails/3.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Sweet
+                                </div>
+                                <div class="project-name">
+                                    Cookies
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="img/portfolio/fullsize/4.jpg" class="portfolio-box">
+                        <img src="img/portfolio/thumbnails/4.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Sweet
+                                </div>
+                                <div class="project-name">
+                                    Smoothies
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="img/portfolio/fullsize/5.jpg" class="portfolio-box">
+                        <img src="img/portfolio/thumbnails/5.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Sweet
+                                </div>
+                                <div class="project-name">
+                                    Tiramisu
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="img/portfolio/fullsize/6.jpg" class="portfolio-box">
+                        <img src="img/portfolio/thumbnails/6.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Sweet
+                                </div>
+                                <div class="project-name">
+                                    Coconut cake
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <aside class="bg-dark">
+        <div class="container text-center">
+            <div class="call-to-action">
+                <h2>Register Now! it's free!!</h2>
+                <a href="SingUp/registro.html" class="btn btn-default btn-xl sr-button">Sign Up</a>
+            </div>
+        </div>
+    </aside>
+
+    <!-- tabs section -->
+    <section id="contact">
+        <div class="container">
+          <div>
+          <!-- Tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+              <li role="presentation" class="active"><a href="#log" aria-controls="log" role="tab" data-toggle="tab">Login</a></li>
+              <li role="presentation" id ="nregistro"><a href="#registro" aria-controls="registro" role="tab" data-toggle="tab">SingUp</a></li>
+              <li role="presentation"><a href="#tabla" aria-controls="tabla" role="tab" data-toggle="tab">Content</a></li>
+              <li role="presentation"><a href="#get" aria-controls="get" role="tab" data-toggle="tab">Get</a></li>
+              <li role="presentation" id ="nchat"><a href="#chat" aria-controls="chat" role="tab" data-toggle="tab">Chat</a></li>
+            </ul>
+
+          <!-- Tabs contents-->
+          <!-- Login -->
+            <div class="tab-content" ng-controller="MyCtrl">
+              <div role="tabpanel" class="tab-pane active" id="log">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3  col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1" id="login">
+                      <form class="reg" method="get" name="pepe">
+                      <div class="form">
+                        <div class="row">
+                        <h1 class="col-lg-2 col-lg-offset-4 col-md-12">Login</h1>
+                        </div>
+                      <div class="row">
+                        <div class="input col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                          <input type="text" class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 " id="mmail" ng-model="object.lmail" name="mail" value="" required autocomplete="off" autofocus placeholder="Email"/>
+                        </div>
+                          <div class="row">
+                          <p class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2  col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2" id="eemail"></p>
+                          </div>
+                      </div>
+                      <div class="row">
+                        <div class="input col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                          <input type="password" class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 " id="ppass" ng-model="object.passs" name="passs" value="" required autocomplete="off" autofocus placeholder="Password"/>
+                        </div>
+                        <div class="row">
+                          <p class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2  col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2" id="mypass"></p>
+                        </div>
+                      </div>
+                      <div class="row">
+                          <button id="blogin" class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2" onclick="comprobar()" ng-click="login()" ng-disabled="login.mail.$invalid || login.passs.$invalid"> Login </button>
+                          <button id="blogout" class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 hide" ng-click="logout()"> LogOut </button>
+                      </div>
+                      </div>
+                      </form>
+                    </div>
+                  </div>
+              </div>
+            </div>
+
+      <!-- SingUp -->
+            <div role="tabpanel" class="tab-pane" id="registro">
+              <div class="container">
+              <div class="row">
+              <form class="reg col-lg-6 col-lg-offset-3 col-md-4 col-md-offset-4" method="get">
+                <div class="row">
+                  <label class="col-lg-10 col-lg-offset-1 col-md-10 col-lg-offset-1" for="name" id="lname">Name:</label>
+                  <input class="col-lg-10 col-lg-offset-1 col-md-10 col-lg-offset-1" type="text" id="name" ng-model="name" name="name" value="" required m-name autocomplete="off" autofocus placeholder="Name"><br>
+                </div>
+                <div class="row">
+                  <p class="col-lg-8 col-lg-offset-1 col-md-8 col-md-offset-1"  id="ename"></p>
+                  </div>
+                  <div class="row">
+                    <label class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1" for="firstname" id="lfirstname">First Name:</label>
+                    <input class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1" type="text" id="firstname" ng-model="first" name="firstname" value="" required m-first autocomplete="off" autofocus placeholder="First Name"><br>
+                  </div>
+                  <div class="row">
+                    <p class="col-lg-8 col-lg-offset-1 col-md-8 col-md-offset-1"  id="efname"></p>
+                  </div>
+                  <div class="row">
+                    <label class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1" for="mail" id="lmail">Email:</label>
+                    <input class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1" type="text" id="mail" ng-model="object.email" name="email" value="" required m-email autocomplete="off" autofocus placeholder="Email"><br>
+                  </div>
+                  <div class="row">
+                    <p class="col-lg-8 col-lg-offset-1 col-md-8 col-md-offset-1"  id="email"></p>
+                  </div>
+                  <div class="row">
+                    <label class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1" for="pass" id="lpass">Password:</label>
+                    <input class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1" type="password" id="pass" ng-model="object.pass" name="pass" value="" required m-password autocomplete="off" autofocus placeholder="Password"><br>
+                  </div>
+                  <div class="row">
+                    <p class="col-lg-8 col-lg-offset-1 col-md-8 col-md-offset-1" id="mipass"></p>
+                  </div>
+                  <div class="row">
+                    <button id="bregin" class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1"  name="submit" onclick="comprobar1()" ng-click="reg()"> Sing Up </button>
+                    <button id="bregout" class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 hide"  name="submit" ng-click="logout()"> LogOut </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+      <!-- result table -->
+          <div role="tabpanel" class="tab-pane" id="tabla">
+            <h3> Login </h3>
+            <p> Email: {{mail}}  </p>
+            <p> Contraseña: {{passs}}  </p>
+
+            <h3> SingUp </h3>
+            <p> Nombre: {{name}}  </p>
+            <p> Apellido: {{first}}  </p>
+            <p> Email: {{email}}  </p>
+            <p> Contraseña: {{pass}}  </p>
+          </div>
+
+          <div role="tabpanel" class="tab-pane" id="get" ng-controller="GCtrl">
+                <div class="container">
+                    <div class="row">
+                        <button class="col-lg-2 col-lg-offset-2" type="button" name="get" ng-click="gethttp()">Get</button>
+                    </div>
+                    <div class="row">
+                        <pre class="col-lg-10 col-lg-offset-1"> {{ info | json }} </pre>
+                    </div>
+                </div>
+          </div>
+
+          <div role="tabpanel" class="tab-pane" id="chat">
+            <div class="container">
+                <div class="row" id="mschat">
+                    <h2>Debes iniciar sesion para usar el chat</h2>
+                </div>
+                <div class="row hide col-lg-10" id="chatbox">
+                    <form class="chat col-lg-10 col-lg-offset-1" method="post" name="chat">
+                        <div class="row col-lg-12" id="mss">
+                            <div class="row" ng-repeat="ms in mss">
+                                <div ng-if="ms.nombre == user" class="col-lg-7 col-md-7 col-sm-7"> {{ MyCtrl.user }} </div>
+                                <div ng-if="ms.nombre == user" class="purple message col-lg-5 col-md-5 col-sm-5">
+                                    <h2> {{ ms.nombre }}:</h2>
+                                    <p> {{ ms.mensaje }} </p>
+                                </div>
+                                <div ng-if="ms.nombre != user" class="blue message col-lg-5 col-md-5 col-sm-5">
+                                    <h2> {{ ms.nombre }}:</h2>
+                                    <p> {{ ms.mensaje }} </p>
+                                </div>
+                                <div ng-if="ms.nombre != user" class="col-lg-7 col-md-7 col-sm-7"> {{ MyCtrl.user }} </div>
+                            </div>
+                        </div>
+                        <div class="row col-lg-12">
+                            <input class="col-lg-9 col-md-9 col-sm-9 col-xs-9" id="mensaje" type="text" ng-model="ctrl.object.mensaje" name="mensaje" value="" required></input>
+                            <button class="col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-2 col-xs-offset-1" type="button" name="enviar" ng-click="sendms()" ng-disabled="chat.mensaje.$invalid">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact us -->
+
+    <section id="contact1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Contact Us!</h2>
+                </div>
+                <div class="col-lg-4 col-lg-offset-2 text-center">
+                    <i class="fa fa-phone fa-3x sr-contact"></i>
+                    <p>123-456-6789</p>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <i class="fa fa-envelope-o fa-3x sr-contact"></i>
+                    <p><a href="mailto:your-email@your-domain.com">lollipop@myeat.com</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="js/creative.min.js"></script>
+    <script src="login/login.js"></script>
+    <script src="js/index.js"></script>
+    <script src="SingUp/registro.js"></script>
+
+</body>
+
+</html>

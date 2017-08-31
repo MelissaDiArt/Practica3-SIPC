@@ -1,0 +1,193 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,500);
+@import url(fa/css/font-awesome.min.css);
+
+body{
+    font: 62.5% Open Sans, Freesans, sans-serif;
+    background-image: url("../img/cakepops.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #1d242a;
+}
+
+p{
+  color:#F781F3;
+}
+
+#login {
+    margin-top:100px;
+    background-color:#1d242a;
+    opacity: 0.9;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+span {
+  height: 2.95em;
+}
+/*titulo login*/
+
+
+.form h1{
+    color:white;
+    font-size:2.8em;
+    font-weight: normal;
+    letter-spacing: -1px;
+    font-family: Open Sans;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.form h1 span{
+    font-weight: 500;
+    letter-spacing: -1px;
+}
+
+.form input{
+    border:none;
+
+}
+
+.form .input{
+    margin-top:2em;
+    overflow:hidden;
+
+}
+
+/*Iconos fa-fa*/
+.form .icon {
+    font-size:1.4em;
+    background:#FFFFFF;
+    padding:0;
+    padding-left: 1vw;
+    padding-top:0.7em;
+    color:#9f9f9f;
+    float:left;
+    box-sizing: padding-box;
+}
+
+.form .icon .dos{
+    height: inherit;
+}
+
+/* Cuadros para email y password*/
+.form input[type="text"],.form input[type="password"] {
+    padding:0.8em 0.8em 0.8em 0;
+    font-size:1.4em;
+    color:#c2c2c2;
+}
+
+.form input[type="text"]:focus,.form input[type="password"]:focus {
+    outline:0;
+}
+
+/*Boton*/
+
+.form button{
+    border:none;
+    background:#F781F3;
+    color:white;
+    font-size:1.6em;
+    padding:0.7em 1.2em;
+    opacity: 1;
+    transition: opacity .5s ease-in-out;
+    -moz-transition: opacity .5s ease-in-out;
+    -webkit-transition: opacity .5s ease-in-out;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+
+
+}
+/* Boton al pasar por encima*/
+.form button:hover {
+    background:rgba(196, 33, 142, 0.94);
+    opacity: 0.8;
+}
+
+.form #sign {
+    color:#FFFFFF;
+    font-size: 1.4em;
+}
+
+.form #sign a{
+    color:#FFFFFF;
+}
+
+.form #sign a:hover{
+    text-decoration: none;
+
+}
+
+@media screen and (max-width:640px) {
+
+  #login {
+    margin-top:80px;
+    background-color:#1d242a;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.form h1{
+    color:white;
+    font-size:2.8em;
+    font-weight: normal;
+    letter-spacing: -1px;
+    font-family: Open Sans;
+    padding-bottom: 20px;
+}
+
+.form h1 span{
+    font-weight: 500;
+    letter-spacing: -1px;
+}
+
+.form input{
+    border:none;
+    margin:0;
+
+}
+
+.form .input{
+    margin:2em 0;
+    overflow:hidden;
+
+}
+
+.form .icon{
+    font-size:1.4em;
+    background:#FFFFFF;
+    padding:0.8em;
+    color:#9f9f9f;
+    float:left;
+    padding-left: 1vw;
+}
+
+.form input[type="text"],.form input[type="password"] {
+    padding:0.8em 0.8em 0.8em 0;
+    font-size:1.4em;
+    color:#c2c2c2;
+}
+
+.form input[type="text"]:focus,.form input[type="password"]:focus {
+    outline:0;
+}
+
+.form button{
+    border:none;
+    background:rgba(222, 59, 167, 0.94);
+    color:white;
+    font-size:1.3em;
+    padding:0.7em 1.2em;
+    opacity: 1;
+    transition: opacity .5s ease-in-out;
+    -moz-transition: opacity .5s ease-in-out;
+    -webkit-transition: opacity .5s ease-in-out;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 20px;
+
+}
+}
